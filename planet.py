@@ -327,7 +327,7 @@ planet13 = """
                   ' -==pHMMH##HH#'''
 """
 
-
+print('\u001b[32m')
 print(planet1)
 sleep(1)
 print('\u001b[25A')
