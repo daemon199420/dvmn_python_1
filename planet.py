@@ -332,6 +332,10 @@ print(planet1)
 sleep(1)
 print('\u001b[25A')
 print('\u001b[2A')
+print(planet2)
+sleep(1)
+print('\u001b[25A')
+print('\u001b[2A')
 print(planet3)
 sleep(1)
 print('\u001b[25A')
@@ -373,7 +377,7 @@ sleep(1)
 print('\u001b[25A')
 print('\u001b[2A')
 print(planet13)
-
+print('\u001b[37mTHE END')
 
 
 
