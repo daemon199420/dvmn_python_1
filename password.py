@@ -21,9 +21,7 @@ def has_letters(password):
 
 def has_upper_letters(password):
     if any(i.isupper() for i in password):
-        print(True)
         return True
-    print(False)
     return False
 
 
