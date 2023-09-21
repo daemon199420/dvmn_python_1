@@ -1,7 +1,5 @@
 import urwid
 
-reply = urwid.Text("")
-
 
 def has_digit(password):
     return any(i.isdigit() for i in password)
@@ -43,13 +41,11 @@ def on_ask_change(edit, new_edit_text):
     reply.set_text("Безопасность пароля: %s" % score)
 
 
-def main():
+if __name__ == '__main__':
+    reply = urwid.Text("")
     ask = urwid.Edit('Введите пароль: ', mask='*')
     menu = urwid.Pile([ask, reply])
     menu = urwid.Filler(menu, valign='top')
     urwid.connect_signal(ask, 'change', on_ask_change)
     urwid.MainLoop(menu).run()
 
-
-if __name__ == '__main__':
-    main()
